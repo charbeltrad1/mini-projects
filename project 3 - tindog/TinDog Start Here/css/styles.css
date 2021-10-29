@@ -1,0 +1,154 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {     /*multiple selector*/
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.h1c {
+  font-size: 3.5rem;
+  margin-bottom: 10%;
+}
+
+.h2c {
+  font-size: 3rem;
+}
+
+.h3c {
+  font-size: 1.5rem;
+}
+
+#title {
+  background-color: #ff4c68;
+  text-align: left;
+  color: #ffffff;
+}
+
+#features {
+  background-color: #ffffff;
+  position: relative;
+}
+
+#testimonials {
+  background-color: #ef8172;
+  color: #ffffff;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+#pricing {
+  background-color: #ffffff;
+}
+
+#cta {
+  background-color: #ff4c68;
+  color: #ffffff;
+}
+
+#footer {
+  background-color: #ffffff;
+}
+
+.container-fluid {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+#title .container-fluid{
+  /*hierarchical selector: selector1 selector2{...} all the container-fluid
+  classes inside the id #title will be selected. note: it's not necessary to
+  have an id as the selector1 and a class as the selector2: we are free to use
+  any type of the 3 selectors in this formulation*/
+  /*We can combine selectors by 3 methods:
+  multiple selector: selector1, selector2,....
+  hierarchical selector: "slector1 selector2": we are selecting the element of the 2nd selector which is a child of the first one
+  and combined selector: "slector1selector2": we are selecting the element having both selectors: selector1 and selector2 as selectors.
+  */
+  padding-top: 3%;
+}
+/*navbar*/
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/*image*/
+.rotated {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  left: 10%;
+}
+
+@media (max-width:992px) {
+  #title {
+    text-align: center;
+  }
+
+  .rotated {
+    width: 60%;
+    transform: rotate(0deg);
+    position: static;
+  }
+}
+
+/*features paragraph*/
+.pc1 {
+  color: #8f8f8f;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+/*features icons*/
+.ic1 {
+  text-align: center;
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.ic1:hover {
+  color: #ff4c68;
+}
+
+/*testimonials images*/
+.testimonialsimage {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+/*press images*/
+.presslogo {
+  width: 15%;
+  margin: 20px 30px 50px;
+}
+/*Pricing cards*/
+.col {
+  padding: 3% 2%;
+}
+/*cta download buttons*/
+.downloadbut {
+  margin-right: 1rem;
+}
+/*footer icons*/
+.footericon {
+  margin: 1rem;
+}
